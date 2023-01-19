@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+.view-profile {
+  border-radius: 30px;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.avatar-img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.profile,
+.repo-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info span,
+.repo-details span {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 2px 10px;
+  letter-spacing: 2;
+  color: white;
+}
+
+main.hide {
+  display: none;
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>GitHub Finder</title>
+</head>
+
+<body>
+  <header class="container-fluid bg-primary">
+    <div class="container text-light">
+      <h3>GitHub Finder</h3>
+    </div>
+  </header>
+  <section class="container my-2 py-2 search-box text-dark rounded border border-muted">
+    <h2>Search GitHub Users</h2>
+    <small class="text-muted">Enter a username to fetch profile info and repo</small>
+    <input type="text" name="username" id="user-name" class="form-control" placeholder="GitHub username" />
+  </section>
+  <main class="main hide">
+    <section
+      class="container my-2 py-2 profile d-lg-flex d-block rounded justify-content-around align-items-center border border-muted">
+      <div class="avatar my-2 col-lg-3">
+        <img src="" class="rounded avatar-img" alt="image" id="avt-img" />
+        <button class="btn btn-sm view-profile btn-primary">
+          <a href="#" id="view" class="text-light">View Profile</a>
+        </button>
+      </div>
+      <div class="details col-lg-9">
+        <div class="info">
+          <div>
+            <span class="rounded bg-primary" id="public-repo">Public Repos: 11</span>
+            <span class="rounded bg-warning" id="gists">Public Gists: 11</span>
+            <span class="rounded bg-success" id="followers">Followers: 11</span>
+            <span class="rounded bg-primary" id="following">Following: 11</span>
+          </div>
+          <div class="info-more my-2">
+            <ul class="list-group">
+              <li class="list-group-item" id="company"></li>
+              <li class="list-group-item" id="website"></li>
+              <li class="list-group-item" id="location"></li>
+              <li class="list-group-item" id="member"></li>
+            </ul>
+          </div>
+        </div>
+        <h2>Latest Repos</h2>
+        <div class="repo">
+          <ul class="list-group repo-ul">
+            <!-- <li class="list-group-item repo-info">
+              <a href="#">k</a>
+              <div class="repo-details">
+                <span class="rounded bg-primary"><i class="fas fa-light fa-star"></i> 11</span>
+                <span class="rounded bg-success"><i class="fas fa-light fa-eye"></i> 11</span>
+                <span class="rounded bg-warning"><i class="fas fa-light fa-code-fork"></i> 11</span>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer my-2 py-2 rounded border border-muted">
+    GitHub Finder &copy;
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
