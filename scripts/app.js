@@ -1,7 +1,7 @@
 const searchUser = document.querySelector('#user-name')
 const git = new GitHub()
 const ui = new UI()
-// let timerId
+let timerId
 
 searchUser.addEventListener('keyup', (event) => {
 	clearTimeout(timerId)
